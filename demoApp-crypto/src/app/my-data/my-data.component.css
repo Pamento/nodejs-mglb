@@ -1,0 +1,13 @@
+
+.package {
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgb(211, 208, 208);
+    border: 2px solid #abc;
+    padding: 1em;
+    margin: 0.5em;
+}
+.displayUsers {
+    display: inline-flex;
+    flex-wrap: wrap;
+}

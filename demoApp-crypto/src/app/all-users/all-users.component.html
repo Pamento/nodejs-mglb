@@ -1,0 +1,15 @@
+<section class="displayUsers">
+  <div class="boxUsername" *ngFor="let user of users" title="edit" (click)="goToUpdate(user)" >
+    <span>Username :</span>
+    <br>
+    <div class="package">
+      <p> {{ user.username }} </p>
+      <p> {{ user.email }} </p>
+      <p> {{ user.password }} </p>
+    </div>
+  </div>
+  <!-- <button (click)="goToNewProfileForm()" >Add new</button> -->
+  <div>
+    <p>{{ loginData | json }}</p>
+  </div>
+</section>

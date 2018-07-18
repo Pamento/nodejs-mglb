@@ -1,0 +1,9 @@
+.deleteBtn {
+    height: 3em;
+    background-color: rgb(255,0,0);
+    font-weight: 700;
+}
+.sumbitNewUser {
+    background-color: rgb(149, 210, 140);
+    height: 3em;
+}

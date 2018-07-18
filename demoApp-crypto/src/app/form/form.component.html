@@ -1,0 +1,20 @@
+<section>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <fieldset>
+        <legend>New One</legend>
+        <label for="username">Username :</label>
+        <input id="username" type="text" name="username" (ngModel)="username" required #username="ngModel" >
+        <label for="email">Email :</label>
+        <input id="email" type="text" name="email" ngModel required >
+        <label for="password">Password :</label>
+        <input id="password" type="password" name="password" ngModel required >
+        <button type="submit">Send</button>
+      </fieldset>
+      <div>
+        <p>First name value: {{ username.value }}</p>
+        <p>First name valid: {{ username.valid }}</p>
+        <p>Form value: {{ form.value | json }}</p>
+        <p>Form valid: {{ form.valid }}</p>
+      </div>
+    </form>
+  </section>
